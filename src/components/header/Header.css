@@ -1,0 +1,16 @@
+nav .headerList {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav .headerList li {
+  padding:5px 10px;
+  cursor: pointer;
+  transition: all .3s;
+  border-radius: 4px;
+}
+nav .headerList li:hover {
+  background-color: rgb(220, 220, 220);
+}
