@@ -1,3 +1,10 @@
+import Header from '../components/header/Header';
+
 export default function ModelXPage() {
-  return <h1>Model X Page</h1>;
+  return (
+    <>
+      <Header />
+      <h1>Model X</h1>;
+    </>
+  );
 }
