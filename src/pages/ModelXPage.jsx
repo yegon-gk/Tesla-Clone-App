@@ -4,7 +4,7 @@ export default function ModelXPage() {
   return (
     <>
       <Header />
-      <h1>Model X</h1>;
+      <h1>Model X</h1>
     </>
   );
 }

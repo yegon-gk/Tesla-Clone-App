@@ -5,7 +5,7 @@ const headerElements = [
   { label: 'TESLA', route: '', style:{marginRight:'auto'} },
   { label: 'Model S', route: 'model_s' },
   { label: 'Model X', route: 'model_x' },
-  { label: 'CyberTruck', route: 'cybertruck' },
+  { label: 'Cyber Truck', route: 'cybertruck' },
   { label: 'Menu', route: 'null', style: {marginLeft: 'auto'} }
 ];
 

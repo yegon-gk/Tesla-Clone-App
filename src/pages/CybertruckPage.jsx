@@ -4,7 +4,7 @@ export default function CybertruckPage() {
   return (
     <>
       <Header />
-      <h1>Cybertruck</h1>;
+      <h1>Cybertruck</h1>
     </>
   );
 }
