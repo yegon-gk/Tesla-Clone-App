@@ -14,3 +14,8 @@ nav .headerList li {
 nav .headerList li:hover {
   background-color: rgb(220, 220, 220);
 }
+
+nav .headerList li:first-of-type{
+    font-size: 20px;
+    font-weight: 600;
+}
