@@ -1,10 +1,16 @@
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  z-index: 200;
+}
+
 nav .headerList {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  padding:5px 20px;
-  background-color: rgba(128, 128, 128, 0.404);
-  margin-top: 0;
+  padding: 0 30px;
 }
 
 nav .headerList li {
@@ -12,22 +18,16 @@ nav .headerList li {
   cursor: pointer;
   transition: all 0.3s;
   border-radius: 4px;
+  font-weight: 600;
 }
 
 nav .headerList li:first-of-type {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
 }
 
 nav .headerList li:hover {
-  background-color: rgba(245, 245, 245, 0.36);
+  background-color: rgba(128, 128, 128, 0.846);
   transform: scale(1.1);
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 200;
-}
