@@ -18,7 +18,7 @@ export default function Product(product) {
       <img src={image} alt={title} className="product-image" />
       <h2 className="product-title">{title}</h2>
       <p className="product-description">{description}</p>
-      <p className="product-price">${price}</p>
+      <p className="product-price">Ksh{price}</p>
       <button onClick={addToCart} className="product-button">
         Add To Cart
       </button>

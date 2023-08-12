@@ -21,12 +21,12 @@ nav .headerList li {
   cursor: pointer;
   transition: all 0.3s;
   border-radius: 4px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 nav .headerList li:first-of-type {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 nav .headerList li:hover {
