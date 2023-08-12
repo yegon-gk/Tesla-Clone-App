@@ -3,32 +3,73 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HomePage from './pages/HomePage';
-import CybertruckPage from './pages/CybertruckPage';
 import ModelSPage from './pages/ModelSPage';
 import ModelXPage from './pages/ModelXPage';
+import CyberTruckPage from './pages/CybertruckPage';
+import App from './App';
+import ShopPage from './pages/ShopPage';
+import { RecoilRoot } from 'recoil';
+import CartPage from './pages/CartPage';
+import { Toaster } from 'react-hot-toast';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <HomePage />,
-  },
-  {
-    path: '/cybertruck',
-    element: <CybertruckPage />,
+    element: (
+      <App>
+        <HomePage />
+      </App>
+    ),
   },
   {
     path: '/model_s',
-    element: <ModelSPage />,
+    element: (
+      <App>
+        <ModelSPage />
+      </App>
+    ),
   },
   {
     path: '/model_x',
-    element: <ModelXPage />,
+    element: (
+      <App>
+        <ModelXPage />
+      </App>
+    ),
+  },
+  {
+    path: '/cybertruck',
+    element: (
+      <App>
+        <CyberTruckPage />
+      </App>
+    ),
+  },
+  {
+    path: '/shop',
+    element: (
+      <App>
+        <ShopPage />
+      </App>
+    ),
+  },
+  {
+    path: '/cart',
+    element: (
+      <App>
+        <CartPage />
+      </App>
+    ),
   },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Toaster />
+    <RecoilRoot>
+      <RouterProvider router={router} />
+    </RecoilRoot>
   </React.StrictMode>,
 );
