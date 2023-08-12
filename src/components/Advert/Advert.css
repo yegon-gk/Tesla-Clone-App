@@ -1,0 +1,22 @@
+/* Advert.css */
+.advertisement-banner {
+  background-color: #f0f0f0;
+  overflow: hidden;
+  padding: 10px 0; /* Adjust padding as needed */
+}
+
+.advertisement-content {
+  white-space: nowrap;
+  animation: scroll-left 15s linear infinite; /* Adjust animation duration as needed */
+  display: inline-block; /* Keep content in a single line */
+  padding: 0 10px; /* Add padding to content for spacing */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
